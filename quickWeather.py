@@ -13,10 +13,12 @@ url = 'https://api.openweathermap.org/data/2.5/weather?q=%s&APPID=aaa7e7b779dfa1
 response = requests.get(url)
 response.raise_for_status()
 
-# print(response.text)
+#print(response.text)
 
 weatherData = json.loads(response.text)
 pprint.pprint(weatherData)
+
+#print(weatherData)
 
 #w = weatherData['list']
 
